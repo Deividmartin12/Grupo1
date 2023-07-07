@@ -225,3 +225,9 @@ header{
  
     float: left;
 }
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
