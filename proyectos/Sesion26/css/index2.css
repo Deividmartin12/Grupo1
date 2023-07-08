@@ -1,0 +1,42 @@
+
+#catego{
+    margin-left: 100px;
+}
+
+#navbar{
+    margin-left: 100px;
+}
+#carouselExampleCaptions{
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide{
+    margin-top: 10px;
+}
+
+.slide img{
+    height: 55vh;
+}
+
+.custom-background2 {
+    background-image: url('../img/messi.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.custom-background {
+    background-image: url('../img/snoop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-fixed-size {
+    width: 200px; 
+    height: auto; 
+  }
+  
+  body {
+    background-color: black;
+    color: white; /* Cambia el color del texto si es necesario */
+  }

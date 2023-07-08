@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		
+		<header >
+			<h1 class="tienda">Tienda</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-bag" viewBox="0 0 16 16">
+						<path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+					  </svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">2</span>
+								<p class="titulo-producto-carrito">Lampara de noche</p>
+								<span class="precio-producto-carrito">$ 70</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$ 200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="../Sesion26/img/lampara.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Lampara de noche</h2>
+					<p class="price">$ 70</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="../Sesion26/img/silla.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Silla</h2>
+					<p class="price">$ 120</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="../Sesion26/img/blusa.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Blusa</h2>
+					<p class="price">$ 70</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="../Sesion26/img/polera.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Polera</h2>
+					<p class="price">$ 90</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="../Sesion26/img/drone.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Drone</h2>
+					<p class="price">$ 540</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="../Sesion26/img/reloj.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>reloj</h2>
+					<p class="price">$ 20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>

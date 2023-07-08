@@ -1,0 +1,196 @@
+body{
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 50vh;
+    width: 50%;
+}
+
+
+/* pacman*/
+.pacman{
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.pacman::before, .pacman::after{
+    content: " ";
+    position: absolute;
+    top: -35px;
+    display: block;
+    border-radius: 50%;
+    height: 0px;
+    width: 0px;
+}
+
+.pacman::before{
+    animation: chunk-top 0.5s ease infinite;
+    border: 35px solid yellow;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+@keyframes chunk-top {
+    0%,100%{
+        transform: rotate(-45deg);
+    }
+    50%{
+        transform: rotate(-80deg);
+    }
+}
+
+.pacman::after{
+    animation: chunk-bottom 0.5s ease infinite;
+    border: 35px solid yellow;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+@keyframes chunk-bottom {
+    0%,100%{
+        transform: rotate(-40deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+}
+
+.dot{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    animation: eating-dot 0.5s linear infinite;
+}
+
+.dot::before{
+    content: " ";
+    background-color: yellow;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+@keyframes eating-dot {
+    0%{
+        transform: translateX(50%);
+    }
+
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+/* pacman*/
+
+/* fantasma*/
+
+.fantasma{
+    margin: 50px;
+    width: 45px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50% 50% 10px 10px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.fantasma .ojo2{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 20px 0 white;
+}
+
+.fantasma .ojo2::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: 20px 0 blue;
+}
+.fantasma .pie{
+    position: absolute;
+    bottom: -5px;
+    left: 2px;
+    width: 16.5px;
+    height: 16px;
+    background-color: black;
+    color: black;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 15px 0, 30px 0, 45px 0;
+    animation: right_to_left 0.2s infinite;
+
+}
+
+
+/* fantasma*/
+
+/* puntos*/
+
+
+@keyframes right_to_left {
+    100%{
+        margin-left: -10px;
+    }
+}
+/* puntos*/
+
+
+/* puntos
+.game-container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.pacman{
+    display: incline-block;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(#F1D76B, #F1C71C);
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.pacman .ojo{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    top: 20%;
+    right: 13px;
+}
+
+.pacman .boca{
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 22px solid black;
+    top: 19px;
+    right: 0px;
+}
+
+*/

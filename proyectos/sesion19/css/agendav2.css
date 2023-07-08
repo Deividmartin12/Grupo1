@@ -1,0 +1,49 @@
+/*.general{
+    display: block;
+    
+    background-color: aqua;
+    margin: 1px;
+    padding-top: 1%;
+    padding-block-end: 3%;
+    width: 40%;
+}
+form{
+    
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    text-align: center;
+    margin: 0px;
+}
+span {
+    width: 100%;
+    display: block;
+    
+    padding-left: 4px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: default ;
+}
+
+li{
+    list-style: none;
+    margin-top: 1px;
+}
+
+.nom{
+    background-color: black;
+    color: white;
+}
+
+.titu{
+    background-color: bisque;
+}
+
+span{
+    
+}
